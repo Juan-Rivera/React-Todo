@@ -1,6 +1,7 @@
 import React from 'react';
 import TodoForm from './components/TodoForm';
 import TodoList from './components/TodoList';
+import './App.css'
 
 const list = [
   {
@@ -62,7 +63,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <div className="header">
-          <h1>ToDo List</h1>
+          <h1>To Do List</h1>
           <TodoForm addTodo={this.addTodo} />
         </div>
         <TodoList
